@@ -5,6 +5,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 import java.util.Date;
+import java.util.Random;
 
 @Entity
 @Table(name = "notes")
@@ -15,8 +16,8 @@ public class Note {
     private String content;
     private Date addedDate;
 
-    public Note(int id, String title, String content, Date addedDate) {
-        this.id = id;
+    public Note(String title, String content, Date addedDate) {
+        this.id = new Random().nextInt(100000);
         this.title = title;
         this.content = content;
         this.addedDate = addedDate;

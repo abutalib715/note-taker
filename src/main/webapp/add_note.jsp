@@ -4,15 +4,15 @@
 <div class="row mt-4">
     <div class="col-md-8 offset-2">
 
-        <form action="" method="post">
+        <form action="save-note" method="post">
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" class="form-control" id="title" aria-describedby="emailHelp"
-                       placeholder="Note Title">
+                       name="title" placeholder="Note Title">
             </div>
             <div class="form-group">
                 <label for="content">Content</label>
-                <textarea class="form-control" placeholder="Content" id="content" rows="5"></textarea>
+                <textarea class="form-control" name="content" placeholder="Content" id="content" rows="5"></textarea>
             </div>
             <div class="text-center">
                 <button type="submit" class="btn btn-primary">Submit</button>

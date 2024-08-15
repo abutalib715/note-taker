@@ -16,4 +16,3 @@
 <body>
 <div class="container">
     <%@include file="navbar.jsp" %>
-</div>

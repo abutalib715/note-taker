@@ -24,9 +24,10 @@
             <div class="card-body">
                 <h5 class="card-title"><%= note.getTitle() %>
                 </h5>
-                <p class="card-text"><%= note.getContent() %>
-                </p>
+                <p class="card-text"><%= note.getContent() %></p>
+                <p class="card-text"><b><%= note.getAddedDate() %></b></p>
                 <a href="delete-note?id=<%= note.getId() %>" class="btn btn-danger">Delete</a>
+                <a href="edit_note.jsp?id=<%= note.getId() %>" class="btn btn-info">Update</a>
             </div>
         </div>
     </div>

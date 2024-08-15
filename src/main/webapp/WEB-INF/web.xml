@@ -9,9 +9,17 @@
         <servlet-name>save-note</servlet-name>
         <servlet-class>servlets.SaveNoteServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>delete-note</servlet-name>
+        <servlet-class>servlets.DeleteNoteServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>save-note</servlet-name>
         <url-pattern>/save-note</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>delete-note</servlet-name>
+        <url-pattern>/delete-note</url-pattern>
     </servlet-mapping>
 </web-app>

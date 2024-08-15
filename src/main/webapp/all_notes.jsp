@@ -26,7 +26,7 @@
                 </h5>
                 <p class="card-text"><%= note.getContent() %>
                 </p>
-                <a href="#" class="btn btn-danger">Delete</a>
+                <a href="delete-note?id=<%= note.getId() %>" class="btn btn-danger">Delete</a>
             </div>
         </div>
     </div>
